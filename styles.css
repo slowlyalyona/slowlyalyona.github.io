@@ -35,13 +35,12 @@ html {
     margin: 0;
 }
 
-body {
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--background);
     width: 100svw;
     height: 100svh;
 
@@ -62,7 +61,7 @@ body {
     }
 
     a {
-        padding-bottom: 60px;
+        margin-bottom: 60px;
         color: var(--accent);
         text-align: center;
 
@@ -74,10 +73,6 @@ body {
             font-size: .8rem;
         }
     }
-}
-
-.swap-font {
-    font-family: -apple-system, system-ui;
 }
 
 /* SVG */
@@ -98,3 +93,41 @@ svg {
         fill: var(--background)
     }
 }
+
+body {
+    width: 100svw;
+    height: 100svh;
+    background-color: var(--background);
+
+    > a {
+        position: absolute;
+        margin: 20px;
+
+        > img {
+            aspect-ratio: 1/1;
+            width: 10svw;
+        }
+    }
+
+    #hungry-cat {
+        bottom: 0;
+        right: 0;
+    }
+
+    #silly-kitty {
+        bottom: 0;
+        left: 0;
+    }
+
+    #pigeon {
+        top: 0;
+        left: 0;
+    }
+
+    #orange-cat {
+        top: 0;
+        right: 0;
+    }
+
+}
+
